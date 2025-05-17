@@ -1,7 +1,7 @@
 # 📝 Reminder App
 
 Swift ile geliştirilmiş basit ama işlevsel bir Reminder (Hatırlatıcı) uygulamasıdır. Uygulama tamamen **Programmatic UIKit** ile tasarlanmış olup, **Core Data** ve **UserDefaults** ile veri yönetimi sağlamaktadır.
-
+Bu proje, [ICommunity](https://github.com/icommunitycomtr) bootcamp müfredatı çerçevesinde oluşturulmuştur.
 ## 🚀 Özellikler
 
 - 📌 Hatırlatıcı oluşturma, düzenleme ve silme
