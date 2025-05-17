@@ -220,3 +220,9 @@ private extension TaskViewController {
         viewModel.saveTask()
     }
 }
+
+
+#Preview {
+    let taskViewModel : TaskViewModelProtocol = PreviewTaskViewModel()
+    TaskViewController(viewModel: taskViewModel)
+}

@@ -109,3 +109,14 @@ final class TaskViewModel: TaskViewModelProtocol {
     }
 
 }
+
+final class PreviewTaskViewModel : TaskViewModelProtocol {
+    
+    func assignDelegate(delegate: TaskViewControllerProtocol){}
+    func updateTitle(_ title: String){}
+    func updateDate(_ date: Date){}
+    func updateTime(_ time: Date){}
+    func saveTask(){}
+    func getTask() -> DailyTask? {return nil}
+}
+
