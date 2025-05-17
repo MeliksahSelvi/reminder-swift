@@ -14,13 +14,13 @@ protocol HomeViewModelProtocol : AnyObject {
     func updateTask(newTask : DailyTask)
     func deleteTask(task: DailyTask)
     func getDisplayedDates(date: Date?) -> [Date]
-    func setCompletionTime(completedAt: Date?) -> String
+    func setCompletionTime(task: DailyTask) -> String
     func buildGreetingMessage() -> String
     func isPlusImageHidden(date: Date) -> Bool
     func areTheySameDay(date1: Date, date2: Date) -> Bool
 }
 
-class HomeViewModel : HomeViewModelProtocol {
+final class HomeViewModel : HomeViewModelProtocol {
     
     private weak var delegate : HomeViewControllerProtocol?
     
@@ -52,9 +52,10 @@ class HomeViewModel : HomeViewModelProtocol {
         return DateUtil.surroundingDays(date: date, count: 4)
     }
     
-    func setCompletionTime(completedAt: Date?) -> String {
-        if let completedAt = completedAt {
-            let formatter = DateFormatter()
+    func setCompletionTime(task : DailyTask) -> String {
+        let formatter = DateFormatter()
+        
+        if let completedAt = task.completedAt {
             
             let calendar = DateUtil.calendar
             let isToday = calendar.isDateInToday(completedAt)
@@ -71,7 +72,8 @@ class HomeViewModel : HomeViewModelProtocol {
                 return "completed on " + formatter.string(from: completedAt)
             }
         } else {
-            return ""
+            formatter.dateFormat = "h:mm a"
+            return "will be finished on " + formatter.string(from: task.remindAt)
         }
     }
     
@@ -97,6 +99,32 @@ class HomeViewModel : HomeViewModelProtocol {
     
     func areTheySameDay(date1: Date, date2: Date) -> Bool {
         return DateUtil.isSameDay(date1, date2)
+    }
+}
+
+final class PreviewHomeViewModel : HomeViewModelProtocol {
+    func assignDelegate(delegate: HomeViewControllerProtocol ){}
+    func getAllTasksByDate(date: Date) -> [DailyTask] {
+        let emptyTasks : [DailyTask] = []
+        return emptyTasks
+    }
+    func updateTask(newTask : DailyTask) {}
+    func deleteTask(task: DailyTask) {}
+    func getDisplayedDates(date: Date?) -> [Date] {
+        let emptyDates : [Date] = []
+        return emptyDates
+    }
+    func setCompletionTime(task: DailyTask) -> String {
+        return ""
+    }
+    func buildGreetingMessage() -> String {
+        return ""
+    }
+    func isPlusImageHidden(date: Date) -> Bool {
+        return false
+    }
+    func areTheySameDay(date1: Date, date2: Date) -> Bool {
+        return false
     }
 }
 

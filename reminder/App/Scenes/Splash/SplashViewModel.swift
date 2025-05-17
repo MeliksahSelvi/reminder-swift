@@ -38,3 +38,8 @@ final class SplashViewModel: SplashViewModelProtocol {
         }
     }
 }
+
+final class PreviewSplashViewModel: SplashViewModelProtocol {
+    func assignDelegate(delegate: SplashViewControllerProtocol){}
+    func getInitialRoute(){}
+}

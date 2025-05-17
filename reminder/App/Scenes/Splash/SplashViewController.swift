@@ -109,3 +109,11 @@ private extension SplashViewController {
         })
     }
 }
+
+#Preview {
+    let viewModel : SplashViewModelProtocol = PreviewSplashViewModel()
+    SplashViewController(viewModel: viewModel,
+                         onNavigateOnboarding: {},
+                         onNavigateHome: {}
+    )
+}

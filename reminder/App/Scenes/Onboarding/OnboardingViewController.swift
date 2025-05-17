@@ -146,8 +146,9 @@ private extension OnboardingViewController {
     }
 }
 
-/*
+
  #Preview {
- OnboardingViewController()
+     let viewModel : OnboardingViewModelProtocol = PreviewOnboardingViewModel()
+     OnboardingViewController(viewModel: viewModel, onNavigateHome: {})
  }
- */
+ 

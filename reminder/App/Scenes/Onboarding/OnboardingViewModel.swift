@@ -12,7 +12,7 @@ protocol OnboardingViewModelProtocol : AnyObject {
     func saveUsername()
 }
 
-class OnboardingViewModel : OnboardingViewModelProtocol {
+final class OnboardingViewModel : OnboardingViewModelProtocol {
     
     private weak var delegate : OnboardingViewControllerProtocol?
     
@@ -39,4 +39,11 @@ class OnboardingViewModel : OnboardingViewModelProtocol {
     }
 }
 
+final class PreviewOnboardingViewModel : OnboardingViewModelProtocol {
+    
+    func assignDelegate(delegate: OnboardingViewControllerProtocol ){}
+    func updateUsername(_ username: String){}
+    func saveUsername(){}
+}
 
+        

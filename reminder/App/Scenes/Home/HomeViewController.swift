@@ -124,7 +124,7 @@ extension HomeViewController : UICollectionViewDataSource,
         case .tasks(let tasks):
             let task = tasks[indexPath.item]
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TaskCell", for: indexPath) as! TaskCell
-            let completionTime = self.viewModel.setCompletionTime(completedAt: task.completedAt)
+            let completionTime = self.viewModel.setCompletionTime(task: task)
             cell.configure(dailyTask: task, delegate: self,completionTime: completionTime)
             return cell
         }
@@ -303,9 +303,11 @@ private extension HomeViewController {
     }
 
 }
-/*
+
 #Preview {
-    HomeViewController()
+    let viewModel : HomeViewModelProtocol = PreviewHomeViewModel()
+    HomeViewController(homeViewModel: viewModel,
+                       onNavigateTaskView: { task in})
 }
- */
+ 
 
