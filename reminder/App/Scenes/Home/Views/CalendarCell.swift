@@ -101,7 +101,7 @@ extension CalendarCell: UICollectionViewDataSource,
         let centerX : CGFloat = horizontalCollectionView!.contentOffset.x + horizontalCollectionView!.bounds.size.width / 2
         let centerPoint = CGPoint(x: centerX, y: horizontalCollectionView!.bounds.size.height / 2)
 
-        let cellWidth : CGFloat = contentView.bounds.width / 5
+        let cellWidth : CGFloat = contentView.bounds.width / 5 - 15
         let diff = currentCenterX - centerX
         
         if abs(diff) > cellWidth {
