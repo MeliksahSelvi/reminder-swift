@@ -26,7 +26,7 @@ Bu proje, [ICommunity](https://github.com/icommunitycomtr) bootcamp müfredatı 
 
 | Yeni Görev (New Task) | Görev Düzenle (Edit Task) | Görev Silme (Delete Task) |
 |------------------------|---------------------------|----------------------------|
-| ![New Task](screenshots/new_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Delete Task](screenshots/delete_task.png) |
+| ![New Task](Screenshot/new_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Delete Task](screenshots/delete_task.png) |
 
 
 ## 🧩 Kurulum
