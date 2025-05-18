@@ -22,7 +22,7 @@ Bu proje, [ICommunity](https://github.com/icommunitycomtr) bootcamp müfredatı 
 
 | Splash Ekranı | Onboarding | Ana Ekran (Home) |
 |---------------|------------|------------------|
-| ![Splash](reminder/Resources/Screenshot/splash.png) | ![Onboarding](screenshots/onboarding.png) | ![Home](reminder/Resources/Screenshot/home.png) |
+| ![Splash](reminder/Resources/Screenshot/splash.png) | <img src="reminder/Resources/Screenshot/onboarding.png" alt="Home" width="250"/> | <img src="reminder/Resources/Screenshot/home.png" alt="Home" width="250"/> |
 
 | Yeni Görev (New Task) | Görev Düzenle (Edit Task) | Görev Silme (Delete Task) |
 |------------------------|---------------------------|----------------------------|
