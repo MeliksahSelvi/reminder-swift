@@ -22,11 +22,11 @@ Bu proje, [ICommunity](https://github.com/icommunitycomtr) bootcamp müfredatı 
 
 | Splash Ekranı | Onboarding | Ana Ekran (Home) |
 |---------------|------------|------------------|
-| ![Splash](reminder/Resources/Screenshot/splash.png) | <img src="reminder/Resources/Screenshot/onboarding.png" alt="Home" width="250"/> | <img src="reminder/Resources/Screenshot/home.png" alt="Home" width="250"/> |
+| <img src="reminder/Resources/Screenshot/splash.png" alt="Splash" width="250"/> | <img src="reminder/Resources/Screenshot/onboarding.png" alt="Onboarding" width="250"/> | <img src="reminder/Resources/Screenshot/home.png" alt="Home" width="250"/> |
 
 | Yeni Görev (New Task) | Görev Düzenle (Edit Task) | Görev Silme (Delete Task) |
 |------------------------|---------------------------|----------------------------|
-| ![New Task](Screenshot/new_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Delete Task](screenshots/delete_task.png) |
+| <img src="reminder/Resources/Screenshot/new_task.png" alt="New Task" width="250"/> | <img src="reminder/Resources/Screenshot/edit_task.png" alt="Edit Task" width="250"/> | !<img src="reminder/Resources/Screenshot/delete_task.png" alt="Delete Task" width="250"/> |
 
 
 ## 🧩 Kurulum
