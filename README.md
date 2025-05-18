@@ -20,7 +20,14 @@ Bu proje, [ICommunity](https://github.com/icommunitycomtr) bootcamp müfredatı 
 
 ## 📸 Ekran Görüntüleri
 
-> Buraya proje ekran görüntülerini ekleyebilirsin
+| Splash Ekranı | Onboarding | Ana Ekran (Home) |
+|---------------|------------|------------------|
+| ![Splash](Resources/Screenshot/splash.png) | ![Onboarding](screenshots/onboarding.png) | ![Home](screenshots/home.png) |
+
+| Yeni Görev (New Task) | Görev Düzenle (Edit Task) | Görev Silme (Delete Task) |
+|------------------------|---------------------------|----------------------------|
+| ![New Task](screenshots/new_task.png) | ![Edit Task](screenshots/edit_task.png) | ![Delete Task](screenshots/delete_task.png) |
+
 
 ## 🧩 Kurulum
 
